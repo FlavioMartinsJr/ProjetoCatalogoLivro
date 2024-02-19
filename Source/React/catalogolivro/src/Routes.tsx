@@ -1,11 +1,11 @@
+import { Home } from './pages/Home';
 
-
-export function App(){
+export function AppRoutes(){
 
 
   return(
       <div>
-        oi
+        <Home/>
       </div>
 
   );

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import Router from 'vite-plugin-router'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
@@ -9,5 +10,5 @@ export default defineConfig({
     },
     cors:true
   },
-  plugins: [react()],
+  plugins: [react(),Router()],
 })

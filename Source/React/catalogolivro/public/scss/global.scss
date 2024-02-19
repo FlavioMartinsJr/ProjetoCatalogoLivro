@@ -6,6 +6,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  
+  #NavBar{
+    background-color: red;
+    min-height: 12vh;
+  }
+
+  main{
+    background-color: aqua;
+    min-height: 81vh;
+  }
+
+  #Footer{
+    background-color: black;
+    min-height: 7vh;
+  }
+ 
 }
-
-
