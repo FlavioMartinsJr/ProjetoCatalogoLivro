@@ -35,7 +35,7 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
                         <div className="nav-text offcanvas-body d-flex justify-content-lg-center justify-content-start">
                             <ul className="navbar-nav">
                                 <li className="nav-item mx-md-2">
-                                    <a className="nav-link" aria-current="page" href="#">Home</a>
+                                    <a className="nav-link" aria-current="page" href="home">Home</a>
                                 </li>
                                 <li className="nav-item mx-md-2">
                                     <a className="nav-link" aria-current="page" href="Contato">Contato</a>
