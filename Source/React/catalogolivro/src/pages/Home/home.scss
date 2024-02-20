@@ -1,5 +1,37 @@
 @import "../../../public/scss/colors.scss";
 
-.teste{
-    background-color: $branco-gelo;
+.fundo{
+    width: 85%;
+    margin: 0 auto;
+
+    .fundo-titulo{
+        display:grid;
+        
+        grid-template-columns: 50% 50%;
+        
+        .fundo-titulo-left{
+            margin-top: 15px;
+
+            h5{
+                font-size: 16px;
+                font-weight: 700;
+                color: $cinza-escuro;
+            }
+            h2{
+                font-size: 26px;
+                margin-top: 9px;
+                padding-left: 10px;
+                color: $preto;
+            }
+        }
+        .fundo-titulo-right{
+            color: $cinza-claro;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
 }

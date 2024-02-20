@@ -25,5 +25,14 @@
 
   #Footer{
   }
+
+  ::-webkit-scrollbar{
+    width: 12px;
+    background-color: $branco-gelo;    
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: $cinza-claro;
+    
+  }
  
 }
