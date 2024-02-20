@@ -1,0 +1,24 @@
+@import "../../../public/scss/colors.scss";
+
+
+.copyright{
+    background-color: $preto-fosco;
+    color: $cinza-claro;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    .copy-menu{
+        text-align: right;
+        a{
+            color: $cinza-claro;
+            text-decoration: none;
+            margin: 0px 10px;
+
+        }
+        a:hover{
+            color: $branco;
+        }
+    }
+}

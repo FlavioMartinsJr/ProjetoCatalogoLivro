@@ -6,20 +6,24 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  
+
+  textarea:focus, input:focus, select:focus {
+    box-shadow: -1px 1px 4px $preto;
+    border: 1px none;
+    outline: 0;
+  } 
+
   #NavBar{
-    background-color: red;
-    min-height: 12vh;
+    
   }
 
   main{
-    background-color: aqua;
-    min-height: 81vh;
+    // ajustes tecnicos
+    margin-top: 11vh;
+    min-height: 83vh;
   }
 
   #Footer{
-    background-color: black;
-    min-height: 7vh;
   }
  
 }
