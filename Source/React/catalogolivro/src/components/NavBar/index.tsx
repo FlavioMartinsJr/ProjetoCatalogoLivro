@@ -54,8 +54,8 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
                     </form>
 
                     <div className="navbar-brand col-xl-3 col-lg-2 col-1 d-flex justify-content-end">
-                        <a aria-current="page" href="Favoritos" className='book-marker mx-4'><FontAwesomeIcon icon={faBookmark}/></a>
-                        <a aria-current="page" href="Usuario" className='user mx-2'><FontAwesomeIcon icon={faUser}/></a>
+                        <a aria-current="page" href="Favoritos" className='book-marker me-2 me-sm-4'><FontAwesomeIcon icon={faBookmark}/></a>
+                        <a aria-current="page" href="Usuario" className='user ms-2 ms-sm-3'><FontAwesomeIcon icon={faUser}/></a>
                     </div>
 
                 </div>

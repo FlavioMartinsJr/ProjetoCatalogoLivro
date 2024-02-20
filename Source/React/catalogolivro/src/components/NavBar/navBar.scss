@@ -59,10 +59,9 @@
             color:$cinza-claro;
         }
     }
-    
+   
     .book-marker{
         color: $preto;
-        padding: 2px 0px;
         cursor: pointer;
         :hover{
             color:$vermelho-claro;
@@ -71,16 +70,12 @@
     }
     .user{
         color: $preto;
-        //Talvez
-        // border: 3px $preto solid;
-        // border-radius: 50px;
-        // padding: 0.2px 7px;
         cursor: pointer;
         :hover{
             color:$vermelho-claro;
         }
     }
-    
+
 }
 ::-webkit-input-placeholder {
     color: $cinza-claro;
