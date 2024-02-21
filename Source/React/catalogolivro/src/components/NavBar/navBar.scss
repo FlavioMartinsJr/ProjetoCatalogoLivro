@@ -47,28 +47,32 @@
         }
         
         .header-content-nav-left{
+            height: 44px;
+
             img{
                display: none;
-               
+
                 @include md{
                     display: block;
                     width: auto;
-                    height: 40px;
-                    margin-top: 2px;
+                    height: 35px;
                     margin-right: 10px;
+                    margin-top: 4px;
                 }
+
                 @include lg{
                     display: block;
                     width: auto;
-                    height: 40px;
-                    margin-top: 2px;
+                    height: 35px;
                     margin-right: 10px;
+                    margin-top: 4px;
                 }
+
                 @include xl{
                     display: block;
                     width: auto;
-                    height: 40px;
-                    margin-top: 2px;
+                    height: 35px;
+                    margin-top: 4px;
                     margin-right: 10px;
                 }                
             }
@@ -90,8 +94,9 @@
                 }
             }
             .nav-text {
-                font-weight: 500;
+                font-weight: 300;
                 font-size: 18px;
+                letter-spacing: 1.5px;
 
                 ul li a{
                     color: $preto;
@@ -106,6 +111,7 @@
 
         .header-content-nav-right{
             justify-content: end;
+            height: 44px;
 
             form{
                 height: 42px;
