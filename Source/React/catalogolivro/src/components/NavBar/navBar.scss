@@ -1,84 +1,194 @@
 @import "../../../public/scss/colors.scss";
+@import "../../../public/scss/responsive.scss";
 
 .header{
     background-color: $preto;
     display: flex;
     justify-content: center;
-    padding:6px 0;
+    padding:5px 0;
+    width: 100%;
 
     .header-icon{
         color: $branco;
-        font-size: 1em;
+        font-size: 0.8rem;
         display:grid ;
-        grid-template-columns: 20px 20px 20px 20px;
-        gap: 5px;
+        grid-template-columns: 22px 22px 22px 22px;
     }
-
 }
 
 .header-content{
-    background-color: $branco;
+    background-color: $sombra-claro;
     justify-content: space-evenly;
-    box-shadow: 0px 2px 4px $cinza-claro;
-    padding-bottom: 3px;
+    border-bottom: 1px $sombra-escuro solid;
     
-    .nav-text {
-        font-weight: 500;
-        font-size: 18px;
+    .header-content-nav{
+        margin: 0 auto;
+        padding: 0;
+        min-width: 60%;
+        display: grid;
         
-        ul li a{
-            color: $preto;
-        }
-        ul li a:hover{
-            color: $vermelho-claro;
-            // border-bottom: 2px $cinza-claro solid;
-        }
-    }
+        grid-template-columns: 50% 50%;
 
-    .pesquisar{
-        font-weight: 500;
-        font-size: 16px;
-        position: relative;
-        padding: 7px 30px;
-        width: 90%;
-        border: 0;
-        box-shadow: -1px 1px 4px $cinza-claro;
-        border-radius: 7px;
-        background-color: $branco;
-        color:$cinza-escuro;
-       
-    }
-    .form-icon{
-        position: relative;
-        right: 36px;
-        top: 9px;
-        color: $cinza-escuro;
-        cursor: pointer;
-
-        :hover{
-            color:$cinza-claro;
+        @include sm{
+            width: 100%;
+            grid-template-columns: 100%;
         }
-    }
-   
-    .book-marker{
-        color: $preto;
-        cursor: pointer;
-        :hover{
-            color:$vermelho-claro;
+        @include md{
+            width: 85%;
+        }
+        @include lg{
+            width: 75%;
+        }
+        @include xl{
+            width: 65%;
+        }
+        @include xxl{
+            width: 55%;
         }
         
-    }
-    .user{
-        color: $preto;
-        cursor: pointer;
-        :hover{
-            color:$vermelho-claro;
+        .header-content-nav-left{
+            img{
+               display: none;
+               
+                @include md{
+                    display: block;
+                    width: auto;
+                    height: 40px;
+                    margin-top: 2px;
+                    margin-right: 10px;
+                }
+                @include lg{
+                    display: block;
+                    width: auto;
+                    height: 40px;
+                    margin-top: 2px;
+                    margin-right: 10px;
+                }
+                @include xl{
+                    display: block;
+                    width: auto;
+                    height: 40px;
+                    margin-top: 2px;
+                    margin-right: 10px;
+                }                
+            }
+
+            button{
+                outline-style: none;
+                box-shadow: 0;
+                border: 0;
+
+                :focus{
+                    box-shadow: 0px;
+                    border: 0px;
+                    outline: 0;
+                }
+                :active{
+                    box-shadow: 0px;
+                    border: 0px;
+                    outline: 0;
+                }
+            }
+            .nav-text {
+                font-weight: 500;
+                font-size: 18px;
+
+                ul li a{
+                    color: $preto;
+                    border-bottom: 2px $sombra-claro solid;
+                }
+                ul li a:hover{
+                    color: $vermelho-claro;
+                    border-bottom: 2px $vermelho-claro solid;
+                }
+            }
+        }
+
+        .header-content-nav-right{
+            justify-content: end;
+
+            form{
+                height: 42px;
+                align-items: center;
+                justify-content: center;
+                margin-right: -12px;
+
+                @include sm{
+                    width: 100vh;
+                }
+
+                .nav-search{
+                    font-weight: 500;
+                    font-size: 16px;
+                    height: 82%;
+                    padding: 5px 30px 5px 20px;
+                    position: relative;
+                    border: 1px $cinza-claro solid;
+                    border-radius: 7px;
+                    background-color: $branco;
+                    color:$cinza-escuro;
+                    min-width: 200px;
+
+                    @include sm{
+                        margin-left: 30px;
+                        width: 100%;
+                    }
+                    @include md{
+                        width: 100%;
+                    }
+                    
+                }
+                
+                .nav-form-icon{
+                    position: relative;
+                    right: 30px;
+                    top: 0px;
+                    color: $cinza-escuro;
+                    cursor: pointer;
+                    :hover{
+                        color:$cinza-claro;
+                    }
+                }
+            }
+            
+
+            .nav-button{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 7px;
+                padding: 0px;
+
+                @include sm{
+                    gap: 5px;
+                }
+                @include md{
+                    gap: 6px;
+                }
+
+                .nav-button-book-marker button{
+                    padding-top:6px ;
+                    padding-bottom: 6px;
+
+                    @include sm{
+                        display: none;
+                    }
+                }
+
+                .nav-button-user button{
+                    padding: 6px 17px 6px 17px;
+                    
+                    @include sm{
+                        display: none;
+                    }
+                }
+            }
         }
     }
-
 }
 ::-webkit-input-placeholder {
     color: $cinza-claro;
-    
 }
+.nav-search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}  
  

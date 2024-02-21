@@ -1,7 +1,21 @@
 @import "../../../public/scss/colors.scss";
+@import "../../../public/scss/responsive.scss";
 
 
 .principal{
-    background-color: $branco-gelo;
-    height: 800px;
+    
+    
+
+    .principal-cards{
+        background-color: $branco-gelo;
+        height: 800px;
+        margin-bottom: 30px;
+    }
+    .principal-paginacao{
+
+        ul li a{
+            color: $cinza-escuro;
+        }
+        
+    }
 }

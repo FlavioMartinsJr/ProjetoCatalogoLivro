@@ -6,10 +6,12 @@ export function Home(){
 
     return(
         <section className="fundo">
-            
+{/*             
             {Tittle("Home","Catálogo de Livro" ,"12 Resultado",true)}
 
-            <Cads/>
+            {Cads()}
+
+             */}
 
         </section>
     )

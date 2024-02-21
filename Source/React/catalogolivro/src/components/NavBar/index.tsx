@@ -19,45 +19,51 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
         </section>
 
         <section className='header-content'>
-            <nav className="navbar navbar-expand-md" >
-                <div className="container-fluid row-md">
+            <nav className="header-content-nav navbar container-fluid navbar-expand-md" >
 
+                <div className='header-content-nav-left d-flex'>
+                    <img className="icon-catalogo" aria-current="page" src="../../../public/img/icons8-livro.png"/>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-
-                    <div className="offcanvas offcanvas-start col-sm-4 col-auto"  id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div className="offcanvas offcanvas-start"  id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div className="offcanvas-header">
                             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
-                        </div>
+                        </div> 
                         
-                        <div className="nav-text offcanvas-body d-flex justify-content-lg-center justify-content-start">
+                        <div className="nav-text offcanvas-body">
                             <ul className="navbar-nav">
-                                <li className="nav-item mx-md-2">
-                                    <a className="nav-link" aria-current="page" href="home">Home</a>
+                                
+                                <li className="nav-item">
+                                    <a className="nav-link" aria-current="page" href="Inicio">Inicio</a>
                                 </li>
-                                <li className="nav-item mx-md-2">
+                                <li className="nav-item">
                                     <a className="nav-link" aria-current="page" href="Contato">Contato</a>
                                 </li>
-                                <li className="nav-item mx-md-2">
+                                <li className="nav-item">
                                     <a className="nav-link" aria-current="page" href="Sobre">Sobre</a>
                                 </li>                    
                             </ul>
                         </div>
                     </div>
-
-                    
-                    <form className="d-flex col-lg-5 col-md-6 col-sm-7 col-8 d-flex justify-content-lg-end justify-content-center navbar-brand" role="pesquisar">
-                        <input className="pesquisar" type="search" placeholder="Pesquisar um Livro..." aria-label="pesquisar"/>
-                        <FontAwesomeIcon className="form-icon" icon={faMagnifyingGlass}/>
+                </div>
+                
+                <div className='header-content-nav-right d-flex align-items-center navbar-brand'>
+                    <form className="d-flex" action="">
+                        <input className="nav-search" type="search" placeholder="Pesquisar um Livro..." aria-label="search"/>
+                        <FontAwesomeIcon className="nav-form-icon" icon={faMagnifyingGlass}/>
                     </form>
 
-                    <div className="navbar-brand col-xl-3 col-lg-2 col-1 d-flex justify-content-end">
-                        <a aria-current="page" href="Favoritos" className='book-marker me-2 me-sm-4'><FontAwesomeIcon icon={faBookmark}/></a>
-                        <a aria-current="page" href="Usuario" className='user ms-2 ms-sm-3'><FontAwesomeIcon icon={faUser}/></a>
+                    <div className="nav-button d-flex">
+                        <div className='nav-button-book-marker'>
+                            <button className='button-default button-default-stroke button-default-small'>Favoritos <FontAwesomeIcon icon={faBookmark}/></button>
+                        </div>
+                        <div className='nav-button-user'>
+                            <button className='button-default button-default-small'>Entrar <FontAwesomeIcon icon={faUser}/></button>
+                        </div>
+                        
                     </div>
-
                 </div>
             </nav>
         </section>
