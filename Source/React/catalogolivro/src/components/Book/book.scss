@@ -1,0 +1,246 @@
+@import "../../../public/scss/colors.scss";
+@import "../../../public/scss/responsive.scss";
+
+
+
+.principal-book{
+    background-color: $sombra-claro;
+    border: 1px $sombra-escuro solid;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px 40px;
+    min-height: 45vh;
+    align-items: top;
+    
+    @include tn{
+        grid-template-columns: 100%;
+        grid-template-rows: 55% 45%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    @include sm{
+        grid-template-columns: 100%;
+        grid-template-rows: 55% 45%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    @include md{
+        height: 55vh;
+        grid-template-rows: 100%;
+        padding: 20px 25px;
+    }
+    @include lg{
+        height: 50vh;
+        padding: 20px 40px;
+    }
+    @include xl{
+        height: 45vh;
+    }
+
+    .principal-book-left{
+        width: 100%;
+        height: 100%;
+
+        .book-img{
+            width: 100%;
+            height: 100%;
+        }
+    
+        @include lg{
+            width: 90%;
+            margin: 0px auto;
+        }
+        @include xl{
+            width: 75%;
+        }
+        @include xxl{
+            width: 70%;
+        }
+        
+    }
+
+    .principal-book-right{
+        padding-left: 22px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include tn{
+            padding-top: 5px;
+            padding-left: 0px;
+        }
+        @include sm{
+            padding-top: 5px;
+            padding-left: 0px;
+        }
+        @include md{
+            padding-top: 5px;
+            padding-left: 10px;
+        }
+        @include lg{
+            padding-top: 0px;
+            padding-left: 22px;
+        }
+
+        .book-body{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            text-align: justify;
+            padding-top: 30px;
+            padding-left: 16px;
+            padding-right: 16px;
+
+            @include tn{
+                padding-top: 10px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            @include sm{
+                padding-top: 10px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            @include md{
+                padding-top: 12px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            @include lg{
+                padding-top: 10px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            @include xl{
+                padding-top: 20px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .book-title{
+                margin-bottom: 16px;
+                font-size: 1.8em;
+                font-weight: 700;
+                letter-spacing: 0.6px;
+                text-align: center;
+                color: $preto;
+                
+                @include tn{
+                    font-size: 0.5em;
+                }
+                @include sm{
+                    font-size: 0.6em;
+                }
+                @include md{
+                    font-size: 0.9em;
+                }
+                
+                @include lg{
+                    font-size: 1em;
+                }
+                
+                @include xl{
+                    font-size: 1.4em;
+                }
+            }
+
+            .book-descrition{
+                margin-bottom: 16px;
+                font-size: 1.1em;
+                font-weight: 400;
+                color: $cinza-escuro;
+                
+                @include tn{
+                    font-size: 0.5em;
+                }
+                @include sm{
+                    font-size: 0.5em;
+                }
+                @include md{
+                    font-size: 0.7em;
+                }
+                
+                @include lg{
+                    font-size: 0.7em;
+                }
+                
+                @include xl{
+                    font-size: 1em;
+                }
+            }
+
+            .book-autho{
+                margin-bottom: 16px;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: $preto-fosco;
+
+                @include tn{
+                    font-size: 0.5em;
+                }
+                @include sm{
+                    font-size: 0.5em;
+                }
+                @include md{
+                    font-size: 0.6em;
+                }
+                
+                @include lg{
+                    font-size: 0.7em;
+                }
+                
+                @include xl{
+                    font-size: 1em;
+                }
+            }
+            .book-star{
+                margin-bottom: 5px;
+            }
+            .book-book-mark{
+                color: $vermelho-claro;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-size: 1.5em;
+                :hover{
+                    text-decoration: underline;
+                }
+                @include tn{
+                    font-size: 0.5em;
+                }
+                @include sm{
+                    font-size: 0.5em;
+                }
+                @include md{
+                    font-size: 0.6em;
+                }
+                
+                @include lg{
+                    font-size: 0.7em;
+                }
+                
+                @include xl{
+                    font-size: 1em;
+                }
+
+                .book-mark-icon{
+                    border: 1px $vermelho-claro solid;
+                    border-radius: 15px;
+                    padding: 6px 8px;
+                }
+
+                a{
+                    margin-left: 5px;
+                    color: $vermelho-claro;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

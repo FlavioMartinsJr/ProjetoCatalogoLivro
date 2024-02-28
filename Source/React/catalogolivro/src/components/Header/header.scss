@@ -1,0 +1,86 @@
+@import "../../../public/scss/colors.scss";
+@import "../../../public/scss/responsive.scss";
+
+.header-fundo{
+    height: 400px;
+    
+    @include tn{
+        height: 200px;
+    }
+    @include sm{
+        height: 260px;
+    }
+    @include md{
+        height: 280px;
+    }
+    @include lg{
+        height: 320px;
+    }
+    @include xl{
+        height: 360px;
+    }
+    @include xxl{
+        height: 400px;
+    }
+
+    img{
+        height: 400px;
+
+        @include tn{
+            height: 200px;
+        }
+        @include sm{
+            height: 260px;
+        }
+        @include md{
+            height: 280px;
+        }
+        @include lg{
+            height: 320px;
+        }
+        @include xl{
+            height: 360px;
+        }
+        @include xxl{
+            height: 400px;
+        }
+
+    }
+    div{
+        .conteudo{
+            height: 63%;
+            h5{
+                align-items: center;
+                font-weight: 900;
+                font-size: 1.6em;
+                color: $vermelho-claro;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: $preto;
+        
+                @include tn{
+                    font-size: 1em;
+                }
+                @include sm{
+                    font-size: 1.2em;
+                }
+            } 
+            p{
+                font-weight: 800;
+                font-size: 0.9em;
+                color: $preto-fosco;
+                padding: 5px 6px;
+                border: 5px solid;
+                width: 100%;
+                margin: 0 auto;
+                letter-spacing: 1px;
+                
+                @include tn{
+                    font-size: 0.6em;
+                }
+                @include sm{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
