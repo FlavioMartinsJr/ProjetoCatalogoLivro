@@ -25,4 +25,50 @@
     @include xxl{
         width: 55%;
     }
+
+    .privacidade{
+        text-align: justify;
+        margin-top: 20px;
+        
+        
+        h3{
+            color: $vermelho-claro;
+            font-size: 2em;
+            font-weight: 600;
+
+            @include sm{
+                font-size: 0.9em;
+            }
+            @include md{
+                font-size: 1.1em;
+            }
+            @include lg{
+                font-size: 1.4em;
+            }
+            @include xl{
+                font-size: 1.6em;
+            }
+            @include xxl{
+                font-size: 2em;
+            }
+        }
+        p{
+            font-size: 1.2em;
+            @include sm{
+                font-size: 0.7em;
+            }
+            @include md{
+                font-size: 0.8em;
+            }
+            @include lg{
+                font-size: 0.9em;
+            }
+            @include xl{
+                font-size: 1.1em;
+            }
+            @include xxl{
+                font-size: 1.2em;
+            }
+        }
+    }
 }
