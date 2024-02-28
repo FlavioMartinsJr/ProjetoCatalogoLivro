@@ -14,12 +14,12 @@
         h5{
             font-size: 0.9em;
             font-weight: 700;
+            width: 100%;
             color: $cinza-escuro;
 
             @include tn{
                 font-size: 7px;
             }
-
             @include sm{
                 font-size: 7px;
             }
@@ -29,6 +29,12 @@
             @include lg{
                 font-size: 12px;
             }
+            
+        }
+        h5:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            opacity: 0.9;
         }
         h2{
             font-size: 1em;

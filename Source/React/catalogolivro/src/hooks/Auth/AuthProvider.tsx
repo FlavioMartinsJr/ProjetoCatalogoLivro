@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useApi } from "../../service/RepoServices";
+import { useApi } from "../../service/AuthServices";
 import { AuthContext } from "./AuthContext";
 
 export const AuthProvider = ({ children }: { children: JSX.Element }) => {

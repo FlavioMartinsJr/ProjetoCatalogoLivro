@@ -2,10 +2,13 @@ import { Cads } from "../../components/Cards/index";
 import { Tittle } from "../../components/Tittle/index";
 import { Header } from "../../components/Header/index";
 import { Separator } from "../../components/Separator/index";
+import {  Books } from "../../hooks/Books/BooksServices";
 import "./home.scss";
 
-export function Home(){
+const books = Books()
 
+export function Home(){
+    books.listarLivros()
     return(
         <section className="fundo">
 
@@ -13,7 +16,7 @@ export function Home(){
 
             {Separator()}
             
-            {Tittle("Home ","Catálogo de Livro" ,"12 Resultado",true)}
+            {Tittle("Inicio ","Catálogo de Livro" ,"12 Resultado",true)}
 
             {Cads()}
             

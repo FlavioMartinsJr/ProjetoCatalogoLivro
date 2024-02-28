@@ -1,41 +1,14 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: "process.env.REACT_APP_API"
+    baseURL: import.meta.env.VITE_API_EBOOK
 });
 
 export const useApi = () => ({
-    validateToken: async (token: string,exp: string) => {
-        const data = new Date()
-        var dataAtual = data.toISOString()
-        if(dataAtual > exp ){
-            return false
-        }
-        var fomulario = new FormData()
-        fomulario.append("username",token);
-        fomulario.append("password",exp);
-        const response = await api.post('/Validate/ValidaProfessor',fomulario, {
-            headers: {
-              'Content-Type': 'multipart/form-data'
-            }
-        });
+    GetBooks: async (url : string) => {
+        const response = await api.get(url)
+        console.log(response.data)
         return response.data;
-       
-    },
-    verificarAluno: async () => {
-        const response = await api.get('/Consulta/ListaAlunos');
-        return response.data.length;
-       
-    },
-    verificarProfessor: async () => {
-        const response = await api.get('/Consulta/ListaProfessores');
-        return response.data.length;
-       
-    },
-    verificarVistante: async () => {
-        const response = await api.get('/Consulta/ListaVisitantes');
-        return response.data.length;
-       
     },
     signin: async (username: string, password: string) => {
         var fomulario = new FormData()

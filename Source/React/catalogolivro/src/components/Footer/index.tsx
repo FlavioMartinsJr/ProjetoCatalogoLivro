@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('Footer')!).render(
             
             <div className="copy-menu">
                 <a href="TermosDeUso">Termos de Uso</a> |
-                <a href="Privacidade">Privacidade</a> |
+                <a href="Privacidade">Politica e Privacidade</a> |
                 <a href="Sobre">Sobre</a> 
             </div>
         </div>

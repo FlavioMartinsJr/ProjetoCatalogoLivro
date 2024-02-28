@@ -12,7 +12,7 @@ export function Sobre(){
     return(
         <section className="fundo-sobre">
 
-            {Tittle("Home / Sobre ","" ,"",false)}
+            {Tittle("Inicio / Sobre ","" ,"",false)}
             <div className="container sobre">
                 <h3>Ver Sobre</h3>
                 <p>O catalogo de Livros serve apenas para fins academicos de uso para promover a apredizagem em praticas de desenvolvimento de sistemas. Olhe tambem nossas <Link className="link" to={"/Privacidade"}>Politica de Privacidade</Link> e <Link className="link" to={"/TermosDeUso"}>Termos de Uso</Link></p>

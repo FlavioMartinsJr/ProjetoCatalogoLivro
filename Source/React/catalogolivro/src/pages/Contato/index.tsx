@@ -11,8 +11,12 @@ export function Contato(){
     return(
         <section className="fundo-contato">
 
-            {Tittle("Home / Contato ","Contato" ,"",false)}
-            
+            {Tittle("Inicio / Contato ","" ,"",false)}
+
+            <div className="container contato">
+                <h3>Contato</h3>
+                <p>(Texto e informações fictícias)</p>
+            </div>
 
         </section>
     )

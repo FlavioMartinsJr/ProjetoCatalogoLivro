@@ -12,7 +12,7 @@ export function Livro(){
     return(
         <section className="fundo-livro">
 
-            {Tittle("Home / Livro / Homem Mais Rico","Ver Livro" ,"",false)}
+            {Tittle("Inicio / Livro / Homem Mais Rico","Ver Livro" ,"",false)}
             
             {Book()}
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './navBar.scss'
-
 import { faWhatsapp,faGithub,faLinkedin,} from "@fortawesome/free-brands-svg-icons";
 import { faSquareEnvelope,faUser,faBookmark, faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 
 ReactDOM.createRoot(document.getElementById('NavBar')!).render(
@@ -37,13 +37,13 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
                             <ul className="navbar-nav">
                                 
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="Inicio">Inicio</a>
+                                    <a className="nav-link" aria-current="page" href="Inicio">INICIO</a>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <a className="nav-link" aria-current="page" href="Contato">Contato</a>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="Sobre">Sobre</a>
+                                    <a className="nav-link" aria-current="page" href="Sobre">SOBRE</a>
                                 </li>                    
                             </ul>
                         </div>
@@ -60,8 +60,10 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
                         {/* <div className='nav-button-book-marker'>
                             <button className='button-default button-default-stroke button-default-small'> <FontAwesomeIcon icon={faBookmark}/></button>
                         </div> */}
+                        
                         <div className='nav-button-user'>
-                            <button className='button-default button-default-small'>Entrar <FontAwesomeIcon icon={faUser}/></button>
+                           
+                            <button className='button-default button-default-small'>ENTRAR <FontAwesomeIcon icon={faUser}/></button>
                         </div>
                         
                     </div>
