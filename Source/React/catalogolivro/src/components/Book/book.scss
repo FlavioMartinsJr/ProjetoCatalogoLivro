@@ -25,7 +25,7 @@
         margin-bottom: 10px;
     }
     @include md{
-        height: 55vh;
+        height: 45vh;
         grid-template-rows: 100%;
         padding: 20px 25px;
     }
@@ -45,7 +45,6 @@
             width: 100%;
             height: 100%;
         }
-    
         @include lg{
             width: 90%;
             margin: 0px auto;
@@ -161,7 +160,7 @@
                     font-size: 0.5em;
                 }
                 @include md{
-                    font-size: 0.7em;
+                    font-size: 0.6em;
                 }
                 
                 @include lg{
@@ -169,7 +168,7 @@
                 }
                 
                 @include xl{
-                    font-size: 1em;
+                    font-size: 0.8em;
                 }
             }
 
@@ -194,7 +193,7 @@
                 }
                 
                 @include xl{
-                    font-size: 1em;
+                    font-size: 0.9em;
                 }
             }
             .book-star{
@@ -241,6 +240,48 @@
                     text-decoration: none;
                 }
             }
+        }
+    }
+}
+.card-related{
+    width: 100%;
+    margin: 0px auto;
+
+    @include tn{
+        width: 100%;
+    }
+
+    @include sm{
+        width: 100%;
+    }
+    @include md{
+        width: 90%;
+    }
+    @include lg{
+        width: 80%;
+    }
+    @include xl{
+        width: 75%;
+    }
+
+    h5{
+        font-size: 0.9em;
+        font-weight: 700;
+        color: $vermelho-claro;
+        text-transform: uppercase;
+
+        @include tn{
+            font-size: 10px;
+        }
+
+        @include sm{
+            font-size: 10px;
+        }
+        @include md{
+            font-size: 12px;
+        }
+        @include lg{
+            font-size: 12px;
         }
     }
 }

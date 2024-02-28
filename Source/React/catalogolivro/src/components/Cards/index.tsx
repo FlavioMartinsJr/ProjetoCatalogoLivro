@@ -28,7 +28,7 @@ export function Cads() {
 
     return(
         <div className="principal">
-            <section className="principal-cards row row-cols-1 row-cols-md-4 row-cols-lg-5 gy-1 gy-md-4 gx-md-2">
+            <section className="principal-cards row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-5 gy-1 gy-md-4 gx-md-2">
                 
                 {repeat.map((index) => (
                     <div key={index} className="fundo-card-book col h-100">
