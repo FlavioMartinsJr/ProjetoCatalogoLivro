@@ -12,7 +12,10 @@ export function Tittle(path:string| any,tittle:string | any,textRight:string | a
                 <h2>{tittle}</h2>
             </div>
             <div className="titulo-right">
-                <p>{icon==true?<FontAwesomeIcon icon={faGrip}/>:<></>} {textRight}</p>
+                <div className="titulo-right-result">
+                    {icon==true?<FontAwesomeIcon className="titulo-right-result-icon" icon={faGrip}/>:<></>}
+                    <span>  {textRight}</span>
+                </div>
             </div>
         </div>
             

@@ -1,7 +1,6 @@
 @import "../../../public/scss/colors.scss";
 @import "../../../public/scss/responsive.scss";
 
-
 .copyright{
     background-color: $preto-fosco;
     color: $cinza-claro;
@@ -10,6 +9,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
+    font-size: 0.8em;
 
     .copy-text{
 

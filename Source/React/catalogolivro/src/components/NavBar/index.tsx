@@ -22,7 +22,8 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
             <nav className="header-content-nav navbar container-fluid navbar-expand-md" >
 
                 <div className='header-content-nav-left d-flex'>
-                    <img className="icon-catalogo" aria-current="page" src="../../../public/img/icons8-livro.png"/>
+                    <img className="icon-catalogo-full" aria-current="page" src="../../../public/img/logo-Livro.png"/>
+                    <img className="icon-catalogo-small" aria-current="page" src="../../../public/img/logo-Livro-pequena.png"/>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -56,9 +57,9 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
                     </form>
 
                     <div className="nav-button d-flex">
-                        <div className='nav-button-book-marker'>
-                            <button className='button-default button-default-stroke button-default-small'>Favoritos <FontAwesomeIcon icon={faBookmark}/></button>
-                        </div>
+                        {/* <div className='nav-button-book-marker'>
+                            <button className='button-default button-default-stroke button-default-small'> <FontAwesomeIcon icon={faBookmark}/></button>
+                        </div> */}
                         <div className='nav-button-user'>
                             <button className='button-default button-default-small'>Entrar <FontAwesomeIcon icon={faUser}/></button>
                         </div>

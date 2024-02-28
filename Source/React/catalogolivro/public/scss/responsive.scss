@@ -1,9 +1,15 @@
+$tn: 300px;//small
 $sm: 480px;//small
-$md: 769px;//medium
-$lg: 1200px;//large
+$md: 500px;//medium
+$lg: 1000px;//large
 $xl: 1760px;//extra large experimento
 $xxl: 2000px;//super large experimento
 
+@mixin tn {
+  @media screen and (max-width: ($tn)) {
+    @content;
+  }
+}
 @mixin sm {
   @media screen and (max-width: ($sm)) {
     @content;

@@ -20,18 +20,25 @@
     background-color: $sombra-claro;
     justify-content: space-evenly;
     border-bottom: 1px $sombra-escuro solid;
+
     
     .header-content-nav{
         margin: 0 auto;
         padding: 0;
         min-width: 60%;
-        display: grid;
-        
+        display: grid;   
         grid-template-columns: 50% 50%;
 
-        @include sm{
-            width: 100%;
+
+        @include tn{
+            padding-right: 32px;
+            min-width: 100%;
             grid-template-columns: 100%;
+            
+        }
+        @include sm{
+            width: 95%;
+            grid-template-columns: 50% 50%;
         }
         @include md{
             width: 85%;
@@ -48,23 +55,20 @@
         
         .header-content-nav-left{
             height: 44px;
+           
+            @include tn{
+                width: 80%;
+            }
 
-            img{
+
+            .icon-catalogo-full{
                display: none;
-
-                @include md{
-                    display: block;
-                    width: auto;
-                    height: 35px;
-                    margin-right: 10px;
-                    margin-top: 4px;
-                }
 
                 @include lg{
                     display: block;
                     width: auto;
                     height: 35px;
-                    margin-right: 10px;
+                    margin-right: 6px;
                     margin-top: 4px;
                 }
 
@@ -73,8 +77,26 @@
                     width: auto;
                     height: 35px;
                     margin-top: 4px;
-                    margin-right: 10px;
+                    margin-right: 6px;
                 }                
+            }
+            .icon-catalogo-small{
+                width: auto;
+                height: 35px;
+                margin-top: 4px;
+                margin-right: 6px;
+                margin-left: 8px;
+
+                @include tn{
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    
+                }
+
+                @include lg{
+                    display: none;
+                }
+
             }
 
             button{
@@ -82,6 +104,13 @@
                 box-shadow: 0;
                 border: 0;
 
+                @include tn{
+                    padding: 0px 10px;
+                    height: 30px;
+                    margin-top: 6px;
+                    margin-left: 0px;
+                    font-size: 12px;
+                }
                 :focus{
                     box-shadow: 0px;
                     border: 0px;
@@ -94,8 +123,9 @@
                 }
             }
             .nav-text {
-                font-weight: 300;
-                font-size: 18px;
+                font-weight: 400;
+                margin-top: 5px;
+                font-size: 0.9em;
                 letter-spacing: 1.5px;
 
                 ul li a{
@@ -112,15 +142,33 @@
         .header-content-nav-right{
             justify-content: end;
             height: 44px;
+            
+            @include tn{
+                margin-left: -35%;
+                width: 131%;
+            }
 
             form{
                 height: 42px;
                 align-items: center;
                 justify-content: center;
-                margin-right: -12px;
+                margin-right: -10px;
+                
+                @include tn{
+                    width: 100%;
+                    margin-right: 0;
+                }
 
                 @include sm{
+                    margin-right: -30px;
                     width: 100vh;
+                }
+                @include md{
+                    margin-right: -25px;
+                }
+
+                @include lg{
+                    margin-right: -10px;
                 }
 
                 .nav-search{
@@ -130,19 +178,22 @@
                     padding: 5px 30px 5px 20px;
                     position: relative;
                     border: 1px $cinza-claro solid;
-                    border-radius: 7px;
+                    border-radius: 5px;
                     background-color: $branco;
                     color:$cinza-escuro;
-                    min-width: 200px;
+                    min-width: 220px;
 
+                    @include tn{
+                        font-size: 0.6em;
+                        min-width: 100%;
+                    }
                     @include sm{
                         margin-left: 30px;
-                        width: 100%;
+                        width: 30px;
                     }
                     @include md{
                         width: 100%;
                     }
-                    
                 }
                 
                 .nav-form-icon{
@@ -171,20 +222,35 @@
                     gap: 6px;
                 }
 
-                .nav-button-book-marker button{
-                    padding-top:6px ;
-                    padding-bottom: 6px;
+                // .nav-button-book-marker button{
+                //     padding-top:6px ;
+                //     padding-bottom: 6px;
+                //     letter-spacing: 0.3px;
+                //     font-weight: 600;
 
-                    @include sm{
-                        display: none;
-                    }
-                }
+                //     @include sm{
+                //         display: none;
+                //     }
+                //     @include md{
+                //         display: none;
+                //     }
+                //     @include lg{
+                //         display: block;
+                //     }
+                // }
 
                 .nav-button-user button{
                     padding: 6px 17px 6px 17px;
-                    
+                    letter-spacing: 0.8px;
+                    font-weight: 500;
                     @include sm{
                         display: none;
+                    }
+                    @include md{
+                        display: none;
+                    }
+                    @include lg{
+                        display: block;
                     }
                 }
             }
