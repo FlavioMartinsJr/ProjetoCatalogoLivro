@@ -6,7 +6,6 @@ import { faSquareEnvelope,faUser,faBookmark, faMagnifyingGlass} from "@fortaweso
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-
 ReactDOM.createRoot(document.getElementById('NavBar')!).render(
     <React.StrictMode>
         <section className='header'>
@@ -37,13 +36,13 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
                             <ul className="navbar-nav">
                                 
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="Inicio">INICIO</a>
+                                    <a className="nav-link" aria-current="page" href="/Inicio" >INICIO</a>
                                 </li>
                                 {/* <li className="nav-item">
                                     <a className="nav-link" aria-current="page" href="Contato">Contato</a>
                                 </li> */}
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="Sobre">SOBRE</a>
+                                    <a className="nav-link" aria-current="page" href="/Sobre">SOBRE</a>
                                 </li>                    
                             </ul>
                         </div>

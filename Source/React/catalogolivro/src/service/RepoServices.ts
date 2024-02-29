@@ -4,25 +4,20 @@ const api = axios.create({
     baseURL: import.meta.env.VITE_API_EBOOK
 });
 
-export const useApi = () => ({
-    GetBooks: async (url : string) => {
-        const response = await api.get(url)
-        console.log(response.data)
-        return response.data;
-    },
-    signin: async (username: string, password: string) => {
-        var fomulario = new FormData()
-        fomulario.append("username",username);
-        fomulario.append("password",password);
+let order = "&orderBy=relevance";
+let projeto = "&projection=full";
+let type = "&printType=all";
+let typeBook = "&filter=ebooks";
+let resultados = "&maxResults=40";
 
-        const response = await api.post('/Auth/LoginProfessor',fomulario, {
-            headers: {
-              'Content-Type': 'multipart/form-data'
-            }
-        });
+export const useApi = () => ({
+    GetLivros: async () => {
+        const response = await api.get("aartededizer"+order+projeto+type+typeBook+resultados)
         return response.data;
     },
-    logout: async () => {
-        return { status: true };
+
+    GetLivrosById: async (id : number) => {
+        const response = await api.get(`${id}`+order+projeto+type+typeBook+resultados)
+        return response.data;
     }
 });
