@@ -1,0 +1,26 @@
+@import "../../../public/scss/colors.scss";
+@import "../../../public/scss/responsive.scss";
+
+.fundo{
+    margin: 0 auto;
+    padding: 5px 10px 5px 10px;
+    min-width: 60%;
+
+    @include sm{
+        width: 95%;
+        padding: 0px;
+    }
+    @include md{
+        width: 85%;
+    }
+    @include lg{
+        width: 75%;
+    }
+    @include xl{
+        width: 65%;
+    }
+    @include xxl{
+        width: 55%;
+    }
+
+}
