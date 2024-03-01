@@ -151,6 +151,9 @@
                 margin-bottom: 16px;
                 font-size: 1.1em;
                 font-weight: 400;
+                height: auto;
+                overflow: auto;
+                text-overflow: ellipsis;
                 color: $cinza-escuro;
                 
                 @include tn{
@@ -242,6 +245,14 @@
             }
         }
     }
+    ::-webkit-scrollbar{
+        width: 5px;
+        height: 1px;
+        background-color: $sombra-escuro;    
+      }
+    ::-webkit-scrollbar-thumb{
+        background-color: $cinza-claro;
+    }
 }
 .card-related{
     width: 100%;
@@ -284,4 +295,6 @@
             font-size: 12px;
         }
     }
+     
 }
+

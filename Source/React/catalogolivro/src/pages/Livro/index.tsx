@@ -3,10 +3,7 @@ import { Book } from "../../components/Book";
 import { ScrollToTop } from "../../hooks/Functions/GoToTop"
 import "./livro.scss";
 
-
-
 export function Livro(){
-
     ScrollToTop();
 
     return(

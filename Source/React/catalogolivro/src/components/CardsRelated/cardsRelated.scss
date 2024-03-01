@@ -5,15 +5,15 @@
 
 .principal-cards-related{
     padding: 20px 5px 22px 3px;
-    
+    margin-bottom: 40px;
     @include tn{
         padding: 0px;
-        margin: 0px;
+        
     }
     
     @include sm{
         padding: 0px;
-        margin: 0px;
+        
     }
 
     .fundo-card-related-book{

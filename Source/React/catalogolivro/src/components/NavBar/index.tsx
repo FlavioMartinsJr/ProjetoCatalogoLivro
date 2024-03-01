@@ -1,13 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import  { useState } from 'react'
 import './navBar.scss'
 import { faWhatsapp,faGithub,faLinkedin,} from "@fortawesome/free-brands-svg-icons";
 import { faSquareEnvelope,faUser,faBookmark, faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-ReactDOM.createRoot(document.getElementById('NavBar')!).render(
-    <React.StrictMode>
+export function NavBar() {
+    
+    const [valor, setValor] = useState("")
+
+    const handleChange = (event: string | any) =>{
+        localStorage.setItem("pesquisa",valor)
+        setValor(event.target.value);
+    }
+    function onSubmit(){
+        localStorage.setItem("pesquisa",valor)
+        window.location.href = "/"
+    }
+
+    return(
+    <div>
         <section className='header'>
             <div className='header-icon'>
                 <FontAwesomeIcon icon={faWhatsapp}/>
@@ -50,9 +62,9 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
                 </div>
                 
                 <div className='header-content-nav-right d-flex align-items-center navbar-brand'>
-                    <form className="d-flex" action="">
-                        <input className="nav-search" type="search" placeholder="Pesquisar um Livro..." aria-label="search"/>
-                        <FontAwesomeIcon className="nav-form-icon" icon={faMagnifyingGlass}/>
+                    <form className="d-flex" onSubmit={onSubmit} action='/'>
+                        <input className="nav-search" onChange={handleChange} type="search" placeholder="Pesquisar um Livro..." name="pesquisa" aria-label="search" />
+                        <FontAwesomeIcon className="nav-form-icon" onClick={onSubmit} icon={faMagnifyingGlass}/>
                     </form>
 
                     <div className="nav-button d-flex">
@@ -69,5 +81,6 @@ ReactDOM.createRoot(document.getElementById('NavBar')!).render(
                 </div>
             </nav>
         </section>
-    </React.StrictMode>,
-)
+    </div>
+    );
+}
