@@ -1,0 +1,74 @@
+@import "../../assets/scss/colors.scss";
+@import "../../assets/scss/responsive.scss";
+
+.fundo-privacidade{
+    margin: 0px auto;
+    padding: 30px 10px 5px 10px;
+    min-width: 60%;
+
+    @include sm{
+        width: 95%;
+        padding: 0px;
+        padding-top: 15px;
+    }
+    @include md{
+        width: 85%;
+        padding-top: 15px;
+    }
+    @include lg{
+        width: 75%;
+        padding-top: 30px;
+    }
+    @include xl{
+        width: 65%;
+    }
+    @include xxl{
+        width: 55%;
+    }
+
+    .privacidade{
+        text-align: justify;
+        margin-top: 20px;
+        
+        
+        h3{
+            color: $vermelho-claro;
+            font-size: 2em;
+            font-weight: 600;
+
+            @include sm{
+                font-size: 0.9em;
+            }
+            @include md{
+                font-size: 1.1em;
+            }
+            @include lg{
+                font-size: 1.4em;
+            }
+            @include xl{
+                font-size: 1.6em;
+            }
+            @include xxl{
+                font-size: 2em;
+            }
+        }
+        p{
+            font-size: 1.2em;
+            @include sm{
+                font-size: 0.7em;
+            }
+            @include md{
+                font-size: 0.8em;
+            }
+            @include lg{
+                font-size: 0.9em;
+            }
+            @include xl{
+                font-size: 1.1em;
+            }
+            @include xxl{
+                font-size: 1.2em;
+            }
+        }
+    }
+}

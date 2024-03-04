@@ -1,0 +1,21 @@
+@import "../../assets/scss/colors.scss";
+@import "../../assets/scss/responsive.scss";
+
+.star{
+    font-size: 1.5em;
+    
+    @include sm{
+        font-size: 0.7em;
+    }
+    @include md{
+        font-size: 0.9em;
+    }
+    
+    @include lg{
+        font-size: 0.9em;
+    }
+    
+    @include xl{
+        font-size: 1em;
+    }
+}

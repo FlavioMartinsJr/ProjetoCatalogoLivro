@@ -1,0 +1,39 @@
+$tn: 300px;//small
+$sm: 480px;//small
+$md: 500px;//medium
+$lg: 1000px;//large
+$xl: 1760px;//extra large experimento
+$xxl: 2000px;//super large experimento
+
+@mixin tn {
+  @media screen and (max-width: ($tn)) {
+    @content;
+  }
+}
+@mixin sm {
+  @media screen and (max-width: ($sm)) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (min-width: ($md)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (min-width: ($lg)) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (min-width: ($xl)) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media screen and (min-width: ($xxl)) {
+    @content;
+  }
+}
+
+
