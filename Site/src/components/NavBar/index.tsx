@@ -49,7 +49,7 @@ export function NavBar() {
                             <ul className="navbar-nav">
                                 
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="/Inicio" >INICIO</a>
+                                    <a className="nav-link" aria-current="page" href="/" >INICIO</a>
                                 </li>
                                 {/* <li className="nav-item">
                                     <a className="nav-link" aria-current="page" href="Contato">Contato</a>
