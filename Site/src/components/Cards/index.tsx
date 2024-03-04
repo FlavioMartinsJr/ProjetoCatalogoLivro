@@ -33,10 +33,10 @@ export function Cads() {
         consultarLivros();
     }, []);
 
-    function Redirect(url: string,book: Livros | any){
+    async function Redirect(url: string,book: Livros | any){
         setLivroStorage(book)
-        navigate(url)
-        
+        await navigate(url)
+        window.location.href = window.location.href;
     }
 
     return(

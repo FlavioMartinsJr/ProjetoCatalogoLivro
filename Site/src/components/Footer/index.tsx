@@ -1,7 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './footer.scss'
+import { useNavigate } from 'react-router-dom'
 
+
+
+function Redirect(url: string){
+    window.location.href = url
+    
+}
 
 ReactDOM.createRoot(document.getElementById('Footer')!).render(
     <React.StrictMode>
@@ -11,9 +18,9 @@ ReactDOM.createRoot(document.getElementById('Footer')!).render(
             </div>
             
             <div className="copy-menu">
-                <a href="TermosDeUso">Termos de Uso</a> |
-                <a href="Privacidade">Politica e Privacidade</a> |
-                <a href="Sobre">Sobre</a> 
+                <a  onClick={() => (Redirect("/TermosDeUso"))} >Termos de Uso</a> |
+                <a  onClick={() => (Redirect("/Privacidade"))}>Politica e Privacidade</a> |
+                <a onClick={() => (Redirect("/Sobre"))}>Sobre</a> 
             </div>
         </div>
     </React.StrictMode>,
