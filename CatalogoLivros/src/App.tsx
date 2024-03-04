@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { AuthProvider } from './hooks/Auth/AuthProvider';
-import '../public/scss/global.scss'
+// import { AuthProvider } from './hooks/Auth/AuthProvider';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {AppRoutes} from './Routes.tsx'
+import "./assets/scss/global.scss";
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

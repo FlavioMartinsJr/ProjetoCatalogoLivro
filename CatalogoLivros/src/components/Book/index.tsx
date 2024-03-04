@@ -1,5 +1,5 @@
-import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome';
-import { faBookmark} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome';
+// import { faBookmark} from "@fortawesome/free-solid-svg-icons";
 import { Stars} from "../Stars";
 import { CadsRelated} from "../CardsRelated";
 import { Separator} from "../Separator";

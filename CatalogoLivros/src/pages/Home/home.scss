@@ -1,10 +1,11 @@
-@import "../../../public/scss/colors.scss";
-@import "../../../public/scss/responsive.scss";
+@import "../../assets/scss/colors.scss";
+@import "../../assets/scss/responsive.scss";
 
 .fundo{
     margin: 0 auto;
     padding: 5px 10px 5px 10px;
     min-width: 60%;
+    background-color: $branco;
 
     @include sm{
         width: 95%;

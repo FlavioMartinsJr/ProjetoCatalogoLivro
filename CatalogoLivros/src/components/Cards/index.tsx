@@ -9,9 +9,9 @@ import { Livros } from "../../Types/Livro";
 import { setLivroStorage } from "../../hooks/Functions/SetLivroStorage";
 
 export function Cads() {
-    let [activeBack, setActiveBack ] = useState(Boolean)
-    let [activeButton, setActiveButton ] = useState(true)
-    let [activeNext, setActiveNext ] = useState(true)
+    let [activeBack ] = useState(Boolean)
+    let [activeButton ] = useState(true)
+    let [activeNext ] = useState(true)
     const [books, setBooks] = useState<any[] | null>(null);
     
     const navigate = useNavigate()

@@ -52,10 +52,15 @@
   }
 
   #root{
+   
     // ajustes tecnicos
     margin-top: 70px;
     min-height: 100vh;
+    .main{
+      background-color: $branco;
+    }
   }
+  
 
   #Footer{
     

@@ -1,9 +1,10 @@
 import  { useState } from 'react'
-import './navBar.scss'
 import { faWhatsapp,faGithub,faLinkedin,} from "@fortawesome/free-brands-svg-icons";
-import { faSquareEnvelope,faUser,faBookmark, faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
+import { faSquareEnvelope,faUser, faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import LogoLivro from "../../assets/img/logo-Livro.png";
+import LogoLivroPequeno from "../../assets/img/logo-Livro-pequena.png";
+import './navBar.scss'
 
 export function NavBar() {
     
@@ -33,8 +34,8 @@ export function NavBar() {
             <nav className="header-content-nav navbar container-fluid navbar-expand-md" >
 
                 <div className='header-content-nav-left d-flex'>
-                    <img className="icon-catalogo-full" aria-current="page" src="../../../public/img/logo-Livro.png"/>
-                    <img className="icon-catalogo-small" aria-current="page" src="../../../public/img/logo-Livro-pequena.png"/>
+                    <img className="icon-catalogo-full" aria-current="page" src={LogoLivro}/>
+                    <img className="icon-catalogo-small" aria-current="page" src={LogoLivroPequeno}/>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

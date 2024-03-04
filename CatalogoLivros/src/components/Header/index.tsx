@@ -1,4 +1,6 @@
-import "./header.scss"
+import slide1 from "../../assets/img/slide1.jpg";
+import slide2 from "../../assets/img/slide2.jpg";
+import "./header.scss";
 
 export function Header(){
 
@@ -12,14 +14,14 @@ export function Header(){
                 </div>
             <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="7000">
-                    <img src="../../../public/img/slide1.jpg" className="d-block w-100" alt="slide1"/>
+                    <img src={slide1} className="d-block w-100" alt="slide1"/>
                     <div className="carousel-caption conteudo">
                         <h5>Livros para Todos os Espíritos Aventureiros!</h5>
                         <p>Dê asas à sua imaginação com nossa coleção de livros online!</p>
                     </div>
                 </div>
                 <div className="carousel-item" data-bs-interval="7000">
-                    <img src="../../../public/img/slide2.jpg" className="d-block w-100" alt="slide2"/>
+                    <img src={slide2} className="d-block w-100" alt="slide2"/>
                     <div className="carousel-caption conteudo">
                         <h5>Livros Online. Explore e Descubra </h5>
                         <p>Encontre sua próxima grande aventura literária online!</p>

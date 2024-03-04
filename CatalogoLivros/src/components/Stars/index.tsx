@@ -1,7 +1,5 @@
 import "./stars.scss"
 import { useState } from "react";
-import "../../../public/scss/colors.scss";
-import "../../../public/scss/responsive.scss";
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
@@ -40,9 +38,11 @@ export function Stars(){
                 value={value}
                 precision={1}
                 onChange={(event, newValue) => {
+                    event
                     setValue(newValue)
                 }}
                 onChangeActive={(event, newHover) => {
+                    event
                     setHover(newHover)
                 }}
                 icon={<FavoriteIcon fontSize="inherit" />}
