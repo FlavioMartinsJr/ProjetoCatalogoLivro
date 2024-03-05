@@ -77,9 +77,9 @@ export function NavBar() {
                         </div> */}
                         
                         <div className='nav-button-user'>
-                           
                             <button className='button-default button-default-small'>ENTRAR <FontAwesomeIcon icon={faUser}/></button>
                         </div>
+
                         
                     </div>
                 </div>

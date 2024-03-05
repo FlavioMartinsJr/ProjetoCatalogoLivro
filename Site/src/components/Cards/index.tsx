@@ -17,7 +17,7 @@ export function Cads() {
     
     const navigate = useNavigate()
     const api = useApi();
-    const itemsPage = 15;
+    const itemsPage = 12;
 
     useEffect(() => {
         const consultarLivros = async () => {
@@ -56,7 +56,7 @@ export function Cads() {
             setItemsOffSet(newOffset)
         }
     }
-    console.log(currentItems)
+
     return(
         <div className="principal">
 

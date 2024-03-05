@@ -29,7 +29,7 @@ function fomartarData(data:any[]| []){
 
 export const useApi = () => ({
     GetLivros: async () => {
-        const response = await api.get("/volumes?q=python"+order+projeto+type+typeBook+resultados+"40")
+        let response = await api.get("/volumes?q=cleancode"+order+projeto+type+typeBook+resultados+"40")
         let data = []
         for(let i = 0; i < response.data.items.length;i++ ){
             if(response.data.items[i].accessInfo.accessViewStatus !== "NONE")
