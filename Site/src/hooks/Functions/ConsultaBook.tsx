@@ -1,11 +1,12 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Livros } from "../../Types/Livro";
 import { getLivroStorage } from "./GetLivroStorage";
 
 export function ConsultaBook(){
+    const navigate = useNavigate()
     const{ title } = useParams()
     if( title !==   localStorage.getItem("LivroTitle"))
-        return window.location.href = "/"
+        return navigate("/")
 
     const Livro : Livros = getLivroStorage()
 

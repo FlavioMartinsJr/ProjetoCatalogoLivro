@@ -161,7 +161,7 @@
                 }
 
                 @include sm{
-                    margin-right: -35px;
+                    margin-right: -45px;
                     width: 100vh;
                 }
                 @include md{
@@ -186,7 +186,8 @@
 
                     @include tn{
                         font-size: 0.6em;
-                        min-width: 100%;
+                        min-width: 90%;
+                        
                     }
                     @include sm{
                         margin-left: 30px;
