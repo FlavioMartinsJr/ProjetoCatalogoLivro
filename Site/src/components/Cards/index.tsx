@@ -56,7 +56,7 @@ export function Cads() {
             setItemsOffSet(newOffset)
         }
     }
-    console.log(currentItems)
+    
     return(
         <div className="principal">
 
