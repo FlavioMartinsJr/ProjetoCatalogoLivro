@@ -9,7 +9,7 @@ import './navBar.scss'
 export function NavBar() {
     
     const [valor, setValor] = useState("")
-
+   
     const handleChange = (event: string | any) =>{
         localStorage.setItem("pesquisa",valor)
         setValor(event.target.value);
@@ -17,6 +17,10 @@ export function NavBar() {
     function onSubmit(){
         localStorage.setItem("pesquisa",valor)
         window.location.href = "/"
+    }
+
+    function Redirect(url: string){
+        window.location.href = url
     }
 
     return(
@@ -34,8 +38,8 @@ export function NavBar() {
             <nav className="header-content-nav navbar container-fluid navbar-expand-md" >
 
                 <div className='header-content-nav-left d-flex'>
-                    <img className="icon-catalogo-full" aria-current="page" src={LogoLivro}/>
-                    <img className="icon-catalogo-small" aria-current="page" src={LogoLivroPequeno}/>
+                    <img className="icon-catalogo-full" aria-current="page" onClick={() => (Redirect("/"))}src={LogoLivro}/>
+                    <img className="icon-catalogo-small" aria-current="page" onClick={() => (Redirect("/"))} src={LogoLivroPequeno}/>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -47,15 +51,14 @@ export function NavBar() {
                         
                         <div className="nav-text offcanvas-body">
                             <ul className="navbar-nav">
-                                
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="/Inicio" >INICIO</a>
+                                    <a className="nav-link" aria-current="page" onClick={() => (Redirect("/"))} >INICIO</a>
                                 </li>
                                 {/* <li className="nav-item">
                                     <a className="nav-link" aria-current="page" href="Contato">Contato</a>
                                 </li> */}
                                 <li className="nav-item">
-                                    <a className="nav-link" aria-current="page" href="/Sobre">SOBRE</a>
+                                    <a className="nav-link" aria-current="page" onClick={() => (Redirect("/Sobre"))}>SOBRE</a>
                                 </li>                    
                             </ul>
                         </div>
