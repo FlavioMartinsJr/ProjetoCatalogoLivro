@@ -38,7 +38,7 @@ export function NavBar() {
             <nav className="header-content-nav navbar container-fluid navbar-expand-md" >
 
                 <div className='header-content-nav-left d-flex'>
-                    <img className="icon-catalogo-full" aria-current="page" onClick={() => (Redirect("/"))} src={LogoLivro}/>
+                    <img className="icon-catalogo-full" aria-current="page" onClick={() => (Redirect("/"))}src={LogoLivro}/>
                     <img className="icon-catalogo-small" aria-current="page" onClick={() => (Redirect("/"))} src={LogoLivroPequeno}/>
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -51,7 +51,6 @@ export function NavBar() {
                         
                         <div className="nav-text offcanvas-body">
                             <ul className="navbar-nav">
-                                
                                 <li className="nav-item">
                                     <a className="nav-link" aria-current="page" onClick={() => (Redirect("/"))} >INICIO</a>
                                 </li>

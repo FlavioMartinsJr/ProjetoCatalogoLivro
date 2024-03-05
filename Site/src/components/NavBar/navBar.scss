@@ -129,6 +129,7 @@
                 letter-spacing: 1.5px;
 
                 ul li a{
+                    cursor: pointer;
                     color: $preto;
                     border-bottom: 2px $sombra-claro solid;
                 }
@@ -160,15 +161,15 @@
                 }
 
                 @include sm{
-                    margin-right: -30px;
+                    margin-right: -35px;
                     width: 100vh;
                 }
                 @include md{
-                    margin-right: -25px;
+                    margin-right: -30px;
                 }
 
                 @include lg{
-                    margin-right: -10px;
+                    margin-right: -25px;
                 }
 
                 .nav-search{
@@ -198,10 +199,12 @@
                 
                 .nav-form-icon{
                     position: relative;
-                    right: 30px;
+                    right: 38px;
                     top: 0px;
+                    border-left: 1px $sombra-escuro solid;
                     color: $cinza-escuro;
                     cursor: pointer;
+                    padding: 6px 8px;
                     :hover{
                         color:$cinza-claro;
                     }

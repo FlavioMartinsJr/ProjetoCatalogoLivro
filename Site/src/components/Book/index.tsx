@@ -5,12 +5,13 @@ import { CadsRelated} from "../CardsRelated";
 import { Separator} from "../Separator";
 import './book.scss'
 import { ConsultaBook } from "../../hooks/Functions/ConsultaBook";
+import { Livros } from "../../Types/Livro";
 
 
 
 export function Book() {
-    let book = ConsultaBook()
-    console.log(book)
+    
+    let book : Livros | any = ConsultaBook()
    
     return(
         <section>

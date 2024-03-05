@@ -1,11 +1,13 @@
+import { useParams } from "react-router-dom";
 import { Livros } from "../../Types/Livro";
 import { getLivroStorage } from "./GetLivroStorage";
 
 export function ConsultaBook(){
-    const Livro : Livros[] = []
-    Livro.push(getLivroStorage()) 
+    const{ title } = useParams()
+    if( title !==   localStorage.getItem("LivroTitle"))
+        return window.location.href = "/"
 
-    let book = Livro[Livro.length - 1]
+    const Livro : Livros = getLivroStorage()
 
-    return book;
+    return Livro;
 }
