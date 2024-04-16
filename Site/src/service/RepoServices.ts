@@ -50,7 +50,7 @@ export const useApi = () => ({
         }
         return fomartarData(data);
     },
-
+    
     GetLivrosByAuthor: async (author : string | any, title  : string | any) => {
         const response = await api.get(`/volumes?q=${author}`+order+projeto+type+typeBook+resultados+"5")
         let data = []
